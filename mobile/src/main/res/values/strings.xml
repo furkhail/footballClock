@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FootballClock</string>
+
+    <string name="minutes">12</string>
+    <string name="time_separator">:</string>
+    <string name="seconds">00</string>
+
+    <string name="deadball">:40</string>
+    <string name="ballready">:25</string>
+    <string name="stop">STOP</string>
+
+    <string name="create_game">CREATE GAME</string>
+    <string name="join_game">JOIN GAME</string>
+
+    <string name="play_clock">PLAY CLOCK</string>
+    <string name="game_clock">GAME CLOCK</string>
+    <string name="spectator">SPECTATOR</string>
+
+    <string name="select_clock">SELECT CLOCK</string>
+    <string name="select_option">SELECT OPTION</string>
+    <string name="exit">EXIT</string>
+    <string name="reset">RESET</string>
+    <string name="set">SET</string>
+
+    <string name="are_you_sure">Are you sure?</string>
+
+</resources>

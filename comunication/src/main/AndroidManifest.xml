@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.furkhail.comunication">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        >
+
+        <activity
+            android:name="com.furkhail.demo.WiFiServiceDiscoveryActivity"
+            android:label="@string/app_name"
+            />
+    </application>
+
+</manifest>

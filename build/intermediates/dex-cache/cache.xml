@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Work\FootballClock\mobile\build\intermediates\exploded-aar\FootballClock\comunication\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c1e0f240f72d4b47428c931581fa0747ffc21b0b">
+        <dex dex="D:\Work\FootballClock\mobile\build\intermediates\pre-dexed\debug\FootballClock-comunication-unspecified_fd76af99bd2859e8b93760f9c7f6f09e76ebe303.jar" />
+    </item>
+
+</items>
