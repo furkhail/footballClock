@@ -1,4 +1,4 @@
-package ball.furkhail.comunication;
+package com.furkhail.comunication;
 
 import org.junit.Test;
 

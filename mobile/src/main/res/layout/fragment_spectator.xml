@@ -12,23 +12,23 @@
 
     <TextView
         android:text="@string/deadball"
-        android:textSize="80sp"
+        android:textSize="@dimen/play_clock_spectator_size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtPlayClock"
-        android:padding="30dp"
+        android:padding="@dimen/play_clock_spectator_padding"
         />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="30dp"
+        android:padding="@dimen/game_clock_spectator_padding"
         >
         <TextView
             android:layout_toLeftOf="@+id/txtSemicolon"
             android:layout_centerVertical="true"
             android:text="@string/minutes"
-            android:textSize="100sp"
+            android:textSize="@dimen/game_clock_spectator_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txtGameClockMinutes"
@@ -36,7 +36,7 @@
         <TextView
             android:layout_centerInParent="true"
             android:text="@string/time_separator"
-            android:textSize="100sp"
+            android:textSize="@dimen/game_clock_spectator_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txtSemicolon"
@@ -46,7 +46,7 @@
             android:layout_toRightOf="@+id/txtSemicolon"
             android:layout_centerVertical="true"
             android:text="@string/seconds"
-            android:textSize="100sp"
+            android:textSize="@dimen/game_clock_spectator_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txtGameClockSeconds"
@@ -54,9 +54,9 @@
         <TextView
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/txtGameClockMinutes"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="@dimen/game_clock_spectator_label_margin"
             android:text="@string/stop"
-            android:textSize="40sp"
+            android:textSize="@dimen/game_clock_spectator_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/lblStop"

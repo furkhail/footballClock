@@ -1,31 +1,15 @@
 package com.furkhail.footballclock.presenter;
 
-import android.content.Context;
-
 import com.furkhail.footballclock.interactor.PlayClockInteractor;
-import com.furkhail.footballclock.model.PlayClockVibrator;
+import com.furkhail.footballclock.model.ClockVibrator;
 import com.furkhail.footballclock.view.fragment.PlayClockFragment;
 
-public class PlayClockPresenter implements PlayClockInteractor.Listener {
-    public interface Listener {
-        void updateTimer(String timer);
-        void showLabel(int label);
-    }
+public class PlayClockPresenter extends ClockPresenter {
 
-    private Listener mListener;
-    private PlayClockInteractor mInteractor;
-    private PlayClockVibrator mVibrator;
-
-    public PlayClockPresenter(Listener listener, Context c) {
+    public PlayClockPresenter(Listener listener) {
         mListener = listener;
         mInteractor = new PlayClockInteractor(this);
-        mVibrator = new PlayClockVibrator(c);
-    }
-
-    @Override
-    public void updateTimer(String seconds) {
-        mListener.updateTimer(":"+seconds);
-        mVibrator.checkVibration(seconds);
+        mVibrator = new ClockVibrator(ClockVibrator.PLAY_CLOCK_VIBRATION);
     }
 
     /**
@@ -33,18 +17,18 @@ public class PlayClockPresenter implements PlayClockInteractor.Listener {
      */
     public void swipeLeft(){
 //        updateTimer("40");
-        mInteractor.startCount(40);
+        mInteractor.startCount(40000);
         mListener.showLabel(PlayClockFragment.LABEL_LEFT);
     }
 
     public void swipeRight(){
 //        updateTimer("25");
-        mInteractor.startCount(25);
+        mInteractor.startCount(25000);
         mListener.showLabel(PlayClockFragment.LABEL_RIGHT);
     }
 
     public void tap(){
-        mInteractor.stopCount();
+        stopCount();
         mListener.showLabel(PlayClockFragment.LABEL_STOP);
     }
 }

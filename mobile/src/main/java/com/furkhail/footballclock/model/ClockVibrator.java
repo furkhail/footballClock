@@ -20,12 +20,14 @@ public class ClockVibrator {
     private String[] vibrateTimes;
 
     public ClockVibrator(int type) {
-        vibrator = (Vibrator) App.getAppContext().getSystemService(Context.VIBRATOR_SERVICE);
+        if(App.getAppContext()!=null) {
+            vibrator = (Vibrator) App.getAppContext().getSystemService(Context.VIBRATOR_SERVICE);
+        }
         vibrateTimes = type == PLAY_CLOCK_VIBRATION ? PLAY_CLOCK_VIBRATE_TIMES : GAME_CLOCK_VIBRATE_TIMES;
     }
 
     private boolean hasVibrator() {
-        return vibrator.hasVibrator();
+        return vibrator!=null && vibrator.hasVibrator();
     }
 
     public void vibrateShort(){

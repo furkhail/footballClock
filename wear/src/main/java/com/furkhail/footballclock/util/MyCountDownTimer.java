@@ -4,7 +4,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
 
-public abstract class MyCountDownTimer{
+public abstract class MyCountDownTimer {
 
     private final long mMillisInFuture;
 
@@ -17,6 +17,10 @@ public abstract class MyCountDownTimer{
     public MyCountDownTimer(long millisInFuture, long countDownInterval) {
         mMillisInFuture = millisInFuture;
         mCountdownInterval = countDownInterval;
+    }
+
+    public synchronized final long millisLeft() {
+        return mStopTimeInFuture - SystemClock.elapsedRealtime();
     }
 
     public synchronized final void cancel() {

@@ -2,7 +2,27 @@
 <resources>
 
     <string name="app_name">FootballClock</string>
-    <string name="hello_round">Hello Round World!</string>
-    <string name="hello_square">Hello Square World!</string>
+
+    <string name="minutes">12</string>
+    <string name="time_separator">:</string>
+    <string name="seconds">00</string>
+
+    <string name="deadball">:40</string>
+    <string name="ballready">:25</string>
+    <string name="stop">STOP</string>
+
+    <string name="create_game">Create game</string>
+    <string name="join_game">Join game</string>
+
+    <string name="play_clock">Play clock</string>
+    <string name="game_clock">Game clock</string>
+
+    <string name="select_clock">select</string>
+    <string name="select_option">select</string>
+    <string name="exit">exit</string>
+    <string name="reset">reset</string>
+    <string name="set">set</string>
+
+    <string name="are_you_sure">Are you sure?</string>
 
 </resources>
